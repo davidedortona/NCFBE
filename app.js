@@ -8,8 +8,8 @@ const authJwt = require('./helpers/jwt');
 const errorHandler = require('./helpers/error-handler');
 const cookieParser = require('cookie-parser')
 require("dotenv/config");
-
-app.use(cors());
+const allowlist = ['https://ncf-hldzlp49w-davidedortona.vercel.app/', 'https://ncfapp-n1zejh6jv-davidedortona.vercel.app/', 'https://ncfappfe-clkfc6awu-davidedortona.vercel.app/'];
+app.use(cors(allowlist));
 app.options("*", cors());
 
 app.use(express.json());
