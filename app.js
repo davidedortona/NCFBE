@@ -8,7 +8,7 @@ const authJwt = require('./helpers/jwt');
 const errorHandler = require('./helpers/error-handler');
 const cookieParser = require('cookie-parser')
 require("dotenv/config");
-const allowlist = ['https://ncf-hldzlp49w-davidedortona.vercel.app/', 'https://ncfapp-n1zejh6jv-davidedortona.vercel.app/', 'https://ncfappfe-clkfc6awu-davidedortona.vercel.app/'];
+const allowlist = ['https://ncf-hldzlp49w-davidedortona.vercel.app/', 'https://ncfapp-n1zejh6jv-davidedortona.vercel.app/', 'https://ncfappfe-clkfc6awu-davidedortona.vercel.app/', 'https://davidedortona.github.io'];
 app.use(cors(allowlist));
 app.options("*", cors());
 
