@@ -216,7 +216,7 @@ router.delete('/:id', async(req,res) =>{
         res.status(500).json({ success: false });
     }
     //immagine = event.image.replace('http://localhost:3000/','');
-    immagine = event.image.replace('https://ncfbackend.herokuapp.com/','');
+    immagine = event.image.replace('https://lime-spotless-eel.cyclic.app/','');
    
     fs.unlink(immagine, (err) => {
         if (err) {
@@ -230,7 +230,7 @@ router.delete('/:id', async(req,res) =>{
     images = event.images;
     for(let i=0; i< images.length; i++){
         //var image = images[i].replace('http://localhost:3000/','');
-        var image = images[i].replace('https://ncfbackend.herokuapp.com/','');
+        var image = images[i].replace('https://lime-spotless-eel.cyclic.app/','');
         
         console.log(image);
         fs.unlink(image, (err) => {

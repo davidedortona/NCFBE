@@ -126,7 +126,7 @@ router.delete('/:id', async (req, res) => {
         res.status(500).json({ success: false });
     }
     //image = banner.image.replace('http://localhost:3000/','');
-    image = banner.image.replace('https://ncfbackend.herokuapp.com/','');
+    image = banner.image.replace('https://lime-spotless-eel.cyclic.app/','');
     
         
         console.log(image);
